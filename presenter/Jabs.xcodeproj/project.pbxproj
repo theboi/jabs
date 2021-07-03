@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA8E8B00268F462700F526B1 /* JabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8AFF268F462700F526B1 /* JabsApp.swift */; };
 		AA8E8B02268F462700F526B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8B01268F462700F526B1 /* ContentView.swift */; };
 		AA8E8B04268F462900F526B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8E8B03268F462900F526B1 /* Assets.xcassets */; };
 		AA8E8B07268F462900F526B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8E8B06268F462900F526B1 /* Preview Assets.xcassets */; };
 		AA8E8B11268F462900F526B1 /* JabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8B10268F462900F526B1 /* JabsTests.swift */; };
 		AA8E8B1B268F462900F526B1 /* JabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8B1A268F462900F526B1 /* JabsUITests.swift */; };
+		AA8E8B28268F621500F526B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8B27268F621500F526B1 /* AppDelegate.swift */; };
+		AA8E8B2A268F640B00F526B1 /* JabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E8B29268F640B00F526B1 /* JabsApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		AA8E8AFC268F462700F526B1 /* Jabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA8E8AFF268F462700F526B1 /* JabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabsApp.swift; sourceTree = "<group>"; };
 		AA8E8B01268F462700F526B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA8E8B03268F462900F526B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA8E8B06268F462900F526B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -42,6 +42,9 @@
 		AA8E8B10268F462900F526B1 /* JabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabsTests.swift; sourceTree = "<group>"; };
 		AA8E8B16268F462900F526B1 /* JabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8E8B1A268F462900F526B1 /* JabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabsUITests.swift; sourceTree = "<group>"; };
+		AA8E8B27268F621500F526B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA8E8B29268F640B00F526B1 /* JabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JabsApp.swift; sourceTree = "<group>"; };
+		AA8E8B2B268F666200F526B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +95,9 @@
 		AA8E8AFE268F462700F526B1 /* Jabs */ = {
 			isa = PBXGroup;
 			children = (
-				AA8E8AFF268F462700F526B1 /* JabsApp.swift */,
+				AA8E8B2B268F666200F526B1 /* Info.plist */,
+				AA8E8B29268F640B00F526B1 /* JabsApp.swift */,
+				AA8E8B27268F621500F526B1 /* AppDelegate.swift */,
 				AA8E8B01268F462700F526B1 /* ContentView.swift */,
 				AA8E8B03268F462900F526B1 /* Assets.xcassets */,
 				AA8E8B05268F462900F526B1 /* Preview Content */,
@@ -254,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8E8B28268F621500F526B1 /* AppDelegate.swift in Sources */,
 				AA8E8B02268F462700F526B1 /* ContentView.swift in Sources */,
-				AA8E8B00268F462700F526B1 /* JabsApp.swift in Sources */,
+				AA8E8B2A268F640B00F526B1 /* JabsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +427,10 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jabs/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Jabs;
+				INFOPLIST_KEY_CFBundleName = Jabs;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +460,10 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Jabs/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = Jabs;
+				INFOPLIST_KEY_CFBundleName = Jabs;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct JabsApp: App {
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                EmptyView()
+            }
+            .hidden()
         }
     }
 }
